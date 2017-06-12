@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_dip_5">
+
+    <android.support.v7.widget.Toolbar xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_title"
+        style="@style/HaiNanApp.TitleBar"
+        toolbar:navigationIcon="@mipmap/ic_back"
+        toolbar:title="@string/title_add" />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/HaiNanApp.PatrolRecordEditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_dip_10"
+        android:layout_marginLeft="@dimen/dimen_dip_20"
+        android:layout_marginRight="@dimen/dimen_dip_20"
+        android:layout_marginTop="@dimen/dimen_dip_10"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_desc"
+            style="@style/HaiNanApp.EditNormalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_input_scene_desc"
+            android:lines="3" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        style="@style/HaiNanApp.TextNormalStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_dip_20"
+        android:text="@string/text_add_attachment" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_dip_20"
+        android:layout_marginRight="@dimen/dimen_dip_20"
+        android:layout_marginTop="@dimen/dimen_dip_10"
+        android:horizontalSpacing="@dimen/dimen_dip_6"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="5"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_dip_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_dip_20"
+        android:layout_marginRight="@dimen/dimen_dip_20"
+        android:layout_marginTop="@dimen/dimen_dip_5"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_dip_1"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            style="@style/HaiNanApp.CreateAttachment"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_take_photo" />
+
+        <View
+            android:layout_width="@dimen/dimen_dip_40"
+            android:layout_height="@dimen/dimen_dip_1" />
+
+        <TextView
+            style="@style/HaiNanApp.CreateAttachment"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_take_video" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_dip_1"
+            android:layout_weight="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        style="@style/HaiNanApp.SubmitAttachment"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_dip_20"
+        android:layout_marginRight="@dimen/dimen_dip_20"
+        android:layout_marginTop="@dimen/dimen_dip_10"
+        android:text="@string/text_submit" />
+
+</LinearLayout>

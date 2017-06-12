@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RetrofitDemo</string>
+    <string name="text_submit">提交</string>
+    <string name="text_add_attachment">点击添加附件</string>
+    <string name="text_patrol_record">巡查记录</string>
+    <string name="text_patrol_result">检查结果</string>
+    <string name="text_enforce_law_type">执法类型</string>
+    <string name="title_add">添加</string>
+    <string name="text_input_scene_desc">请输入现场描述</string>
+    <string name="text_take_photo">拍照</string>
+    <string name="text_audio_record">录音</string>
+    <string name="text_take_video">录像</string>
+    <string-array name="attachment_type">
+        <item>图片</item>
+        <item>音频</item>
+        <item>视频</item>
+    </string-array>
+</resources>
